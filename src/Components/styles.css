@@ -1,0 +1,8 @@
+*{
+    background-color: rgb(158, 189, 239);
+}
+
+.head{
+    display: flex;
+    gap: 20px;
+}
