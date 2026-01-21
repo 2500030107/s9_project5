@@ -1,10 +1,15 @@
 import { Link , useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import "../components/contact.css";
 import profile from "../assets/profile.jpg";
 
 
 function Contact() {
      const location = useLocation();
+     useEffect(() => {
+             alert(localStorage.getItem("useride"));
+         }, []);
+     
     return (
         <>
             <div className="head">

@@ -1,9 +1,14 @@
 import { Link , useLocation } from "react-router-dom"
+import { useEffect } from "react";
 import "../components/styles.css"
 
 
 function About() {
     const location = useLocation();
+    useEffect(() => {
+            alert(localStorage.getItem("useride"));
+        }, []);
+    
     return (
         <>
             <div className="head">
