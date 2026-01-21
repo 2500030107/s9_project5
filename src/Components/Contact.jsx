@@ -9,6 +9,13 @@ function Contact() {
      useEffect(() => {
              alert(localStorage.getItem("useride"));
          }, []);
+<<<<<<< HEAD
+=======
+               const handleBtnclick = () => {       
+            localStorage.setItem("useride","");
+    };
+
+>>>>>>> a01e39803c9bce75640236baf0478f8123f2389d
      
     return (
         <>
@@ -52,6 +59,7 @@ function Contact() {
 </div>
                 </div>
             </div>
+            <button onClick={handleBtnclick} class="glass-btn">Clear LocalStorage</button>
         </>
     );
 }

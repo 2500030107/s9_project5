@@ -8,6 +8,13 @@ function About() {
     useEffect(() => {
             alert(localStorage.getItem("useride"));
         }, []);
+<<<<<<< HEAD
+=======
+              const handleBtnclick = () => {       
+            localStorage.setItem("useride","");
+    };
+
+>>>>>>> a01e39803c9bce75640236baf0478f8123f2389d
     
     return (
         <>
@@ -19,6 +26,7 @@ function About() {
                 <br></br></div>
                 <h1>This is the about page u know!!!!</h1> 
                 <p>I'm belongs to ---CSE3{location.state?.course}</p>
+                <button onClick={handleBtnclick} class="glass-btn">Clear LocalStorage</button>
 
                                  
            
